@@ -38,6 +38,11 @@ dependencies:
   simple_circular_progress_bar: ^1.0.2
   json_annotation: 4.8.1
   readmore: ^3.0.0
+  get: ^4.7.2
+  url_launcher: ^6.1.10
+  google_fonts: ^6.2.1
+  provider: ^6.0.5
+  
 
 dev_dependencies:
   flutter_test:
