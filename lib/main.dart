@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobile/modul10/callall.dart';
 import 'package:mobile/modul11/modul11.dart';
+import 'package:mobile/modul12/modul12.dart';
 import 'package:mobile/modul7/modul7.dart';
 import 'package:mobile/modul8/modul8.dart';
 import 'package:mobile/modul9/perobaan1.dart'; // misalnya ini file Modul8Page kamu
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/modul9': (context) => const CounterPage(),
         '/modul10': (context) => const Modul10prac(),
         '/modul11': (context) => const modul11page(),
+        '/modul12': (context) => const Modul12(),
       },
     );
   }
@@ -35,10 +37,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Menu Modul'),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: const Text('Menu Modul'), centerTitle: true),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView(
@@ -76,6 +75,13 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, '/modul11');
               },
               child: const Text('Modul 11'),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/modul12');
+              },
+              child: const Text('Modul 12'),
             ),
           ],
         ),
