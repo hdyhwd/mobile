@@ -4,7 +4,8 @@ import 'package:mobile/modul11/modul11.dart';
 import 'package:mobile/modul12/modul12.dart';
 import 'package:mobile/modul7/modul7.dart';
 import 'package:mobile/modul8/modul8.dart';
-import 'package:mobile/modul9/perobaan1.dart'; // misalnya ini file Modul8Page kamu
+import 'package:mobile/modul9/perobaan1.dart';
+import 'package:mobile/modul13/crud.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/modul10': (context) => const Modul10prac(),
         '/modul11': (context) => const modul11page(),
         '/modul12': (context) => const Modul12(),
+        '/modul13': (context) => const crud(),
       },
     );
   }
@@ -82,6 +84,13 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, '/modul12');
               },
               child: const Text('Modul 12'),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/modul13');
+              },
+              child: const Text('Modul 13'),
             ),
           ],
         ),

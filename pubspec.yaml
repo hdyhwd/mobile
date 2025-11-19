@@ -44,6 +44,7 @@ dependencies:
   provider: ^6.0.5
   geolocator: ^12.0.0
   geocoding: ^3.0.0
+  intl: ^0.18.1
   
 
 dev_dependencies:
