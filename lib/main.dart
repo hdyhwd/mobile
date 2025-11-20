@@ -6,6 +6,7 @@ import 'package:mobile/modul7/modul7.dart';
 import 'package:mobile/modul8/modul8.dart';
 import 'package:mobile/modul9/perobaan1.dart';
 import 'package:mobile/modul13/crud.dart';
+import 'package:mobile/Gps/mylocation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/modul11': (context) => const modul11page(),
         '/modul12': (context) => const Modul12(),
         '/modul13': (context) => const crud(),
+        '/GPS': (context) => const GPS(),
       },
     );
   }
@@ -91,6 +93,13 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, '/modul13');
               },
               child: const Text('Modul 13'),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/GPS');
+              },
+              child: const Text('GPS NOw'),
             ),
           ],
         ),
